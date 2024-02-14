@@ -8,17 +8,46 @@
   .calender{
      display: grid;
      grid-template-columns: repeat(7,1fr);
+     grid-template-rows: repeat(6,80px);
+     row-gap: 20px;
+     column-gap: 10px;
 
   }
-  .date{
+  .date,.day{
    border: 1px solid black;
-   padding: 30px;
-   background-color: skyblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   background-color: orange;
+   font-size: 2em;
+   font-weight: 800;
+  }
+  .day{
+
+    background-color: black;
+    color:orange;
+    font-size: 3em;
+    /* border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
   }
  </style>
 </head>
 <body>
   <div class="calender">
+    <div class="day">SU</div>
+    <div class="day">M</div>
+    <div class="day">T</div>
+    <div class="day">W</div>
+    <div class="day">TH</div>
+    <div class="day">F</div>
+    <div class="day">S</div>
     <div class="date">29</div>
     <div class="date">30</div>
     <div class="date">31</div>
